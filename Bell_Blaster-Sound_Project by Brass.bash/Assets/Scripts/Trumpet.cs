@@ -12,19 +12,17 @@ public class Trumpet : MonoBehaviour
 		PlayerPosition = GetComponentInParent<Camera> ();
 	}
 
-
-	public void TrumpetShoot()
+	
+	void Update()
 	{
+		//fire a "projectile" from the trumpet
 		if (Input.GetMouseButtonDown(0))
 		{
-			
+			//this will depends on Yash creating an animation or not
+		//StartCoroutine(SoundWaveEffect());
+
+		Vector3 rayOrigin = PlayerPosition.ViewportToWorldPoint (new Vector3 (.5f, .5f, 0));
 		}
 	}
 
-	void Update()
-	{
-		StartCoroutine(SoundWaveEffect());
-
-		Vector3 rayOrigin = fpsCam.ViewportToWorldPoint (new Vector3 (.5f, .5f, 0));
-	}
 }
