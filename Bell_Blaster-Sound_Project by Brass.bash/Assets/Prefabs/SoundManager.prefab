@@ -48,18 +48,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943770966421630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ae5818306f57541bb58f4468ef9662, type: 3}
+  m_Script: {fileID: 11500000, guid: 87c2a3934334a0b439701af65113a34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bellSounds:
-  - {fileID: 8300000, guid: 379ddfc52eab47540b110387832d72be, type: 3}
-  - {fileID: 8300000, guid: 9b764f20bb51e4d44863ac41d670f6e7, type: 3}
   - {fileID: 8300000, guid: 5c74fe69facfa954dbded6e51185f29c, type: 3}
-  - {fileID: 8300000, guid: e73a5de9c05cf0c458cdb848252b45f8, type: 3}
   - {fileID: 8300000, guid: 48d2b9d5ae029df4e9165a3938479e5e, type: 3}
   - {fileID: 8300000, guid: 9b23244c3a13e22439d90deddcc1c932, type: 3}
   - {fileID: 8300000, guid: 524bc040cde5c4b47955ebe68709a0dd, type: 3}
   - {fileID: 8300000, guid: 6094acc0082e24e4fa24b318cfde18f2, type: 3}
+  - {fileID: 8300000, guid: 379ddfc52eab47540b110387832d72be, type: 3}
+  - {fileID: 8300000, guid: 9b764f20bb51e4d44863ac41d670f6e7, type: 3}
+  - {fileID: 8300000, guid: e73a5de9c05cf0c458cdb848252b45f8, type: 3}
   BGM:
   - {fileID: 8300000, guid: 3e1a2242cdad8914196304cd9340d5fb, type: 3}
   - {fileID: 8300000, guid: 759a302cb858bd7469a0c92a240f0063, type: 3}
