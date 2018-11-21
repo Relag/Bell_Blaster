@@ -7,6 +7,9 @@ public class SoundManager : MonoBehaviour {
     // Array for all the Bell Sounds
     public AudioClip[] bellSounds;
 
+	// Array of Trumpet Sounds
+	public AudioClip[] Honks;
+
     //Array for all the Music
     public AudioClip[] BGM;
 
@@ -31,6 +34,16 @@ public class SoundManager : MonoBehaviour {
         playFrom.loop = false;
         playFrom.PlayOneShot(bellSounds[x]);
     }
+
+	//Plays various trumpet sounds from an array upon left clicking
+	public void TrumpetSound(int x, AudioSource playFrom)
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			playFrom.loop = false;
+			playFrom.PlayOneShot(Honks[x]);
+		}
+	}
 
     //Function to play Background Music:  SoundManager.Instance.PlayMusic(Clip, AudioSource); To Use
     public void PlayMusic(int x, AudioSource playFrom)
