@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1943770966421630}
+  m_IsPrefabAsset: 1
+--- !u!1 &1943770966421630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4521157417443502}
+  - component: {fileID: 114027398726670838}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4521157417443502
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943770966421630}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.710836, y: 1.9489055, z: 2.3465595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114027398726670838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943770966421630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ae5818306f57541bb58f4468ef9662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bellSounds:
+  - {fileID: 8300000, guid: 379ddfc52eab47540b110387832d72be, type: 3}
+  - {fileID: 8300000, guid: 9b764f20bb51e4d44863ac41d670f6e7, type: 3}
+  - {fileID: 8300000, guid: 5c74fe69facfa954dbded6e51185f29c, type: 3}
+  - {fileID: 8300000, guid: e73a5de9c05cf0c458cdb848252b45f8, type: 3}
+  - {fileID: 8300000, guid: 48d2b9d5ae029df4e9165a3938479e5e, type: 3}
+  - {fileID: 8300000, guid: 9b23244c3a13e22439d90deddcc1c932, type: 3}
+  - {fileID: 8300000, guid: 524bc040cde5c4b47955ebe68709a0dd, type: 3}
+  - {fileID: 8300000, guid: 6094acc0082e24e4fa24b318cfde18f2, type: 3}
+  BGM:
+  - {fileID: 8300000, guid: 3e1a2242cdad8914196304cd9340d5fb, type: 3}
+  - {fileID: 8300000, guid: 759a302cb858bd7469a0c92a240f0063, type: 3}
