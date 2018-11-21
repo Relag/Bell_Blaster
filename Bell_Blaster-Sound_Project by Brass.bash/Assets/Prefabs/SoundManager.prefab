@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4521157417443502}
   - component: {fileID: 114027398726670838}
+  - component: {fileID: 114573821161797000}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -63,3 +64,16 @@ MonoBehaviour:
   BGM:
   - {fileID: 8300000, guid: 3e1a2242cdad8914196304cd9340d5fb, type: 3}
   - {fileID: 8300000, guid: 759a302cb858bd7469a0c92a240f0063, type: 3}
+--- !u!114 &114573821161797000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943770966421630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fcc45a5f07bd34895e2a6dc2321ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bellSounds: []
+  BGM: []
