@@ -20,8 +20,24 @@ public class Trumpet : MonoBehaviour
 		{
 			//this will depends on Yash creating an animation or not
 		//StartCoroutine(SoundWaveEffect());
-
-		Vector3 rayOrigin = PlayerPosition.ViewportToWorldPoint (new Vector3 (.5f, .5f, 0));
+                //Joel's Script
+		    //Vector3 rayOrigin = PlayerPosition.ViewportToWorldPoint (new Vector3 (.5f, .5f, 0));
+            RaycastHit hit;
+            //Create Raycast
+            if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100.0f))
+            {
+                //Trying to draw debug raycast
+                Debug.DrawRay(transform.position, Vector3.forward, Color.cyan);
+                //Call SoundManager to play bell (temp)
+                SoundManager.Instance.RingBell(0, GetComponent<AudioSource>());
+                //Change currentNote Enum in GameManager
+                GameManager.Instance.currentNote = GameManager.BellNotes.D2;
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, Vector3.forward, Color.black);
+                 SoundManager.Instance.RingBell(0, GetComponent<AudioSource>());
+            }
 		}
 	}
 
