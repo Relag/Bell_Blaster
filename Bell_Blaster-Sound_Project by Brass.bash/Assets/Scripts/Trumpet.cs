@@ -27,7 +27,7 @@ public class Trumpet : MonoBehaviour
             if (Physics.Raycast(transform.position, Vector3.forward, out hit, 100.0f))
             {
                 //Trying to draw debug raycast
-                Debug.DrawRay(transform.position, Vector3.forward, Color.cyan);
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.cyan);
                 //Call SoundManager to play bell (temp)
                 SoundManager.Instance.RingBell(0, GetComponent<AudioSource>());
                 //Change currentNote Enum in GameManager
