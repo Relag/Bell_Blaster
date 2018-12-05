@@ -10,6 +10,7 @@ public class NotePickUp : MonoBehaviour
     private int score;
     private AudioSource myAudio;
 
+
     public AudioClip purpleNote;        // once the purple note is picked up, play deep note
     public AudioClip blueNote;
     public AudioClip whiteNote;
@@ -21,26 +22,34 @@ public class NotePickUp : MonoBehaviour
     {
         myAudio = GetComponent<AudioSource>();
 
-        score = 0;                      // pick up score starts at 0
+        score = 0;                          // pick up score starts at 0
         SetScoreText ();
 
-        completedLevelText.text = "";
+        //completedLevelText.text = "";     // uncomment this once the UI is made 
 	}
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag ("Purple note"))
-        {
-            other.gameObject.SetActive(false);
-            myAudio.Play();
+            myAudio.clip = purpleNote;
 
             score += 1;
             SetScoreText();
-        }
-        if (other.gameObject.CompareTag("Blue Note"))
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+            Debug.Log("HitPurpleNote");
+       
+        if (other.gameObject.CompareTag("Blue"))
         {
-            myAudio.PlayOneShot(blueNote);
+            myAudio.clip = blueNote;
+
+            score += 1;
+            SetScoreText();
+            other.gameObject.SetActive(false);
+            Destroy(gameObject);
+            gameObject.SetActive(false);
+            Debug.Log("HitBlueNote");
         }
+        
     }
 
     void SetScoreText()
@@ -50,7 +59,7 @@ public class NotePickUp : MonoBehaviour
         if (score >= 7  || score <= 10) 
         {
             // uncomment this once the UI is made
-            //completedLevelText.text = "Congrats, you have completed the level!" +
+            //completedLevelText.text = "Congrats, you have completed the level!" w+
             //"Please proceed through the doorway";
         }
     }
