@@ -23,6 +23,7 @@ public class MoveBridge : MonoBehaviour
         else
         {
             transform.position = normal;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
