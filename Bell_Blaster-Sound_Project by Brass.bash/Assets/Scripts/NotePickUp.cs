@@ -21,7 +21,7 @@ public class NotePickUp : MonoBehaviour
     {
         myAudio = GetComponent<AudioSource>();
 
-        score = 0;                          // pick up score starts at 0
+        GameManager.Instance.score = 0;                          // pick up score starts at 0
         SetScoreText ();
 
         //completedLevelText.text = "";     // uncomment this once the UI is made 
