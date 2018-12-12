@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114627423644064104}
   - component: {fileID: 114110068515815016}
   m_Layer: 0
-  m_Name: MusicNoteCyan
+  m_Name: MusicNoteYellow 1
   m_TagString: Cyan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,8 +121,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1057055671421808}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.62, y: 7.3599997, z: 0.12}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 16.272188, y: 2.6942756, z: -43.04884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4548086640104498}
@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83fbb2b08f583ea459141a9ea72d15c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
   purpleNote: {fileID: 8300000, guid: 052e9cfbe12f5364ab96a5d49fd3290c, type: 3}
   blueNote: {fileID: 8300000, guid: 047a92207813d6745b557ecfcd14d1f3, type: 3}
   whiteNote: {fileID: 8300000, guid: b3d00cef81da6744e8abadf9f4d9193f, type: 3}

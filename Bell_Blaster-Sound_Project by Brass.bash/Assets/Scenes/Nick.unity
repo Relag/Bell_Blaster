@@ -726,6 +726,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4115914121921868, guid: 78a573bcaa53c504d992efe31ee22084,
     type: 2}
   m_PrefabInternal: {fileID: 552670053}
+--- !u!224 &334862578 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224053502665125794, guid: 1d96808f6f3a885458b2791869dc07d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1620705150}
 --- !u!1001 &349262804
 Prefab:
   m_ObjectHideFlags: 0
@@ -1282,6 +1287,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114110068515815016, guid: 78a573bcaa53c504d992efe31ee22084,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78a573bcaa53c504d992efe31ee22084, type: 2}
   m_IsPrefabAsset: 0
@@ -2676,6 +2686,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114657041355672030, guid: a877de76f8130a7469c70ab481e850c7,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a877de76f8130a7469c70ab481e850c7, type: 2}
   m_IsPrefabAsset: 0
@@ -2824,6 +2839,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114194570573408002, guid: 36e6c86ffa2d5c045b1ce59a24c582c0,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36e6c86ffa2d5c045b1ce59a24c582c0, type: 2}
   m_IsPrefabAsset: 0
@@ -3274,6 +3294,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114281383110054032, guid: 4c13055898a6f9941a768638df268658,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c13055898a6f9941a768638df268658, type: 2}
   m_IsPrefabAsset: 0
@@ -3567,6 +3592,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114066191995498866, guid: f3a08c3af27985e4a94edbb300e7ce0b,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a08c3af27985e4a94edbb300e7ce0b, type: 2}
   m_IsPrefabAsset: 0
@@ -3615,6 +3645,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114044323517118844, guid: c2d4715f641663e478d8eb2f299143da,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2d4715f641663e478d8eb2f299143da, type: 2}
   m_IsPrefabAsset: 0
@@ -3917,6 +3952,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4893736757065208, guid: 2a09dbc847da445499b258c2fe2e43c3,
     type: 2}
   m_PrefabInternal: {fileID: 2066292051}
+--- !u!1 &1465876750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465876751}
+  - component: {fileID: 1465876753}
+  - component: {fileID: 1465876752}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1465876751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465876750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 334862578}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -25}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1465876752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465876750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score: '
+--- !u!222 &1465876753
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1465876750}
+  m_CullTransparentMesh: 0
 --- !u!1 &1481390972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,6 +5065,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114785322739544632, guid: 44cc792cc4fb2c846a65e2bbfdde8cfa,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44cc792cc4fb2c846a65e2bbfdde8cfa, type: 2}
   m_IsPrefabAsset: 0
@@ -5179,6 +5294,15 @@ Prefab:
     - target: {fileID: 4115914121921868, guid: c6340cf2f483da34dadcada8c38deb43, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114110068515815016, guid: c6340cf2f483da34dadcada8c38deb43,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1465876752}
+    - target: {fileID: 1057055671421808, guid: c6340cf2f483da34dadcada8c38deb43, type: 2}
+      propertyPath: m_Name
+      value: MusicNoteCyan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6340cf2f483da34dadcada8c38deb43, type: 2}
