@@ -10,6 +10,8 @@ public class SoundManager : MonoBehaviour {
     //Array for all the Music
     public AudioClip[] BGM;
 
+    public AudioClip[] harmonics;
+
     public static SoundManager Instance;
 	// Use this for initialization
 	void Awake ()
@@ -38,6 +40,12 @@ public class SoundManager : MonoBehaviour {
         playFrom.loop = true;
         playFrom.clip = BGM[x];
         playFrom.Play();
+    }
+
+    public void PlayHarmonic(int x, AudioSource playFrom)
+    {
+        playFrom.loop = false;
+        playFrom.PlayOneShot(harmonics[x]);
     }
 
 }

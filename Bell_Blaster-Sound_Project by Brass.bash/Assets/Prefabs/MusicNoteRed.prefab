@@ -47,21 +47,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1303694347119680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4793251560855378}
-  m_Layer: 0
-  m_Name: Purple (2)
-  m_TagString: Purple
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1691694531578772
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,10 +58,9 @@ GameObject:
   - component: {fileID: 114691261735636618}
   - component: {fileID: 82378889690313230}
   - component: {fileID: 114076121432478340}
-  - component: {fileID: 135305210082226460}
   m_Layer: 0
   m_Name: MusicNoteRed
-  m_TagString: Purple
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,15 +107,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1691694531578772}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.6, y: 1.368, z: 25.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -281.61517, y: -5.3708534, z: -450.48}
+  m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children:
   - {fileID: 4943733134050598}
   - {fileID: 4577059246412188}
   - {fileID: 4197900369653468}
   - {fileID: 4620360319556928}
-  - {fileID: 4793251560855378}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -174,19 +157,6 @@ Transform:
   m_Father: {fileID: 4099354500632576}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 135, y: 0, z: 0}
---- !u!4 &4793251560855378
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303694347119680}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.5167, y: -5.026867, z: -18.43537}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4099354500632576}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4943733134050598
 Transform:
   m_ObjectHideFlags: 1
@@ -215,7 +185,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ebd8c7ba2ed724547acf383ee278cdd7, type: 2}
+  - {fileID: 2100000, guid: f2043fef71ce4de4b88ba2c5ca5bbd69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,7 +220,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ebd8c7ba2ed724547acf383ee278cdd7, type: 2}
+  - {fileID: 2100000, guid: f2043fef71ce4de4b88ba2c5ca5bbd69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -285,7 +255,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ebd8c7ba2ed724547acf383ee278cdd7, type: 2}
+  - {fileID: 2100000, guid: f2043fef71ce4de4b88ba2c5ca5bbd69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -320,7 +290,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ebd8c7ba2ed724547acf383ee278cdd7, type: 2}
+  - {fileID: 2100000, guid: f2043fef71ce4de4b88ba2c5ca5bbd69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -375,7 +345,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822041780551260}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -387,7 +357,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1128072278690394}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -399,7 +369,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886265585173444}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -507,16 +477,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691694531578772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69220ee32e243334581569726dc26bd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ce3ddac8013d584789a05b8d74180e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  purpleNote: {fileID: 8300000, guid: 38d398f738395524180077ac861b2d17, type: 3}
-  blueNote: {fileID: 8300000, guid: 7c18eee0cc3654d4b9d867b5a4a0679b, type: 3}
-  whiteNote: {fileID: 8300000, guid: 8ecf266256aeeee4f936570d2780d9dc, type: 3}
-  redNote: {fileID: 8300000, guid: fd53762726ee1724a91130664fb31bd0, type: 3}
-  yellowNote: {fileID: 8300000, guid: d5efcd8e4bbafde44839058c8b5a6ca6, type: 3}
-  orangeNote: {fileID: 8300000, guid: aebbbb0bd48906c4bb71b562efbd8364, type: 3}
-  greenNote: {fileID: 8300000, guid: ad77610ffdf224a4a99c52acf3d98e7f, type: 3}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!114 &114691261735636618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -525,22 +489,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691694531578772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3ae29ea9fbcd143a555d23ecc639e4, type: 3}
+  m_Script: {fileID: 11500000, guid: bb2c6d86302d4aa429bd442abc6e36f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 180, z: 0}
---- !u!135 &135305210082226460
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1691694531578772}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  purpleNote: {fileID: 0}
+  blueNote: {fileID: 0}
+  whiteNote: {fileID: 0}
+  redNote: {fileID: 0}
+  yellowNote: {fileID: 0}
+  orangeNote: {fileID: 0}
+  greenNote: {fileID: 0}
 --- !u!135 &135529418388665918
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -548,7 +506,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1239690293465358}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

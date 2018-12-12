@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1943770966421630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.710836, y: 1.9489055, z: 2.3465595}
+  m_LocalPosition: {x: 31.373953, y: 17.852077, z: -2.3373156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943770966421630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6fcc45a5f07bd34895e2a6dc2321ebc, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a7f0e93a556904e8b8fb3fc0d62556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bellSounds:
@@ -61,5 +61,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7c18eee0cc3654d4b9d867b5a4a0679b, type: 3}
   - {fileID: 8300000, guid: fd53762726ee1724a91130664fb31bd0, type: 3}
   BGM:
-  - {fileID: 8300000, guid: 7d14f81cdee3061499cdf1e36fa4b635, type: 3}
   - {fileID: 8300000, guid: d629b0e5c4f3349479c136242f6528cb, type: 3}
+  - {fileID: 8300000, guid: 7d14f81cdee3061499cdf1e36fa4b635, type: 3}
+  - {fileID: 8300000, guid: c4885c1093a09554282f9d85f511fa33, type: 3}
+  harmonics:
+  - {fileID: 8300000, guid: ae08ed4eee1253646adfa960555b14c9, type: 3}
+  - {fileID: 8300000, guid: 1ec82932518a43247b7f512853759b81, type: 3}
+  - {fileID: 8300000, guid: f5d18fab1b940af4680e3df58cc4ab88, type: 3}
+  - {fileID: 8300000, guid: f80230fc6ba99ef4f8411c2896f17e10, type: 3}
+  - {fileID: 8300000, guid: 658d28f838440ab489159d18b647aef9, type: 3}
+  - {fileID: 8300000, guid: 1b81b0f780f4a484e908ca8378cfbbfb, type: 3}
+  - {fileID: 8300000, guid: 06b22298f36d02e498d36f7bcc74d8e7, type: 3}
+  - {fileID: 8300000, guid: 66f9b3cc14cad884ba7fb1953ba41b04, type: 3}
