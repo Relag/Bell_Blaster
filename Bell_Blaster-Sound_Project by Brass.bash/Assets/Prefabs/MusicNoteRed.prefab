@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114691261735636618}
   - component: {fileID: 82378889690313230}
   - component: {fileID: 114076121432478340}
+  - component: {fileID: 135298721127423336}
   m_Layer: 0
   m_Name: MusicNoteRed
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1691694531578772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -281.61517, y: -5.3708534, z: -450.48}
+  m_LocalPosition: {x: -690.9352, y: -5.1120005, z: -599.27}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children:
   - {fileID: 4943733134050598}
@@ -384,14 +385,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.77
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 163
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce3ddac8013d584789a05b8d74180e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 90, z: 0}
 --- !u!114 &114691261735636618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -499,6 +500,18 @@ MonoBehaviour:
   yellowNote: {fileID: 0}
   orangeNote: {fileID: 0}
   greenNote: {fileID: 0}
+--- !u!135 &135298721127423336
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691694531578772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &135529418388665918
 SphereCollider:
   m_ObjectHideFlags: 1

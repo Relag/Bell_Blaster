@@ -30,12 +30,11 @@ public class NotePickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-            myAudio.clip = purpleNote;
+        SoundManager.Instance.PlayHarmonic(8, myAudio);
 
             score += 1;
             SetScoreText();
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            StartCoroutine ("DestroyPickup");
             Debug.Log("HitPurpleNote");
        
         if (other.gameObject.CompareTag("Blue"))
@@ -50,6 +49,12 @@ public class NotePickUp : MonoBehaviour
             Debug.Log("HitBlueNote");
         }
         
+    }
+
+    IEnumerator DestroyPickup()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 
     void SetScoreText()
