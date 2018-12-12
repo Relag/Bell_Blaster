@@ -31,10 +31,11 @@ public class NotePickUp : MonoBehaviour
     {
         SoundManager.Instance.PlayHarmonic(8, myAudio);
 
-            GameManager.Instance.score += 1;
-            SetScoreText();
-            StartCoroutine ("DestroyPickup");
-            Debug.Log("HitPurpleNote");
+        GameManager.Instance.score += 1;
+        SetScoreText();
+        
+        StartCoroutine ("DestroyPickup");
+        Debug.Log("HitPurpleNote");
        
         if (other.gameObject.CompareTag("Blue"))
         {
