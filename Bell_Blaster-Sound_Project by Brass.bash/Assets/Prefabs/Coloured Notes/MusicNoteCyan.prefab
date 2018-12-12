@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4115914121921868}
   - component: {fileID: 82420137527581212}
-  - component: {fileID: 136645006934949376}
   - component: {fileID: 114627423644064104}
   - component: {fileID: 114110068515815016}
+  - component: {fileID: 135696988530354510}
   m_Layer: 0
   m_Name: MusicNoteYellow 1
   m_TagString: Cyan
@@ -514,8 +514,8 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136645006934949376
-CapsuleCollider:
+--- !u!135 &135696988530354510
+SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -523,7 +523,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.4249375
-  m_Height: 1.5831585
-  m_Direction: 1
-  m_Center: {x: 0.00075709826, y: 0.50364697, z: -0.11856556}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
