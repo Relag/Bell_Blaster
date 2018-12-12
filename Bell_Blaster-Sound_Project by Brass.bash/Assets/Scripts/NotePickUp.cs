@@ -29,7 +29,7 @@ public class NotePickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        SoundManager.Instance.PlayHarmonic(8, myAudio);
+        SoundManager.Instance.PlayHarmonic(7, myAudio);
 
             GameManager.Instance.score += 1;
             SetScoreText();
