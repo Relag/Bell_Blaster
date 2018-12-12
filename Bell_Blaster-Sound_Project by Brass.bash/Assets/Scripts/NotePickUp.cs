@@ -17,6 +17,7 @@ public class NotePickUp : MonoBehaviour
     public AudioClip yellowNote;
     public AudioClip orangeNote;
     public AudioClip greenNote;
+    public AudioClip cyanNote;
     void Start ()
     {
         myAudio = GetComponent<AudioSource>();
@@ -29,7 +30,7 @@ public class NotePickUp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        SoundManager.Instance.PlayHarmonic(7, myAudio);
+        SoundManager.Instance.PlayHarmonic(8, myAudio);
 
             GameManager.Instance.score += 1;
             SetScoreText();
