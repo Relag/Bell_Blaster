@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 1691694531578772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -690.9352, y: -5.1120005, z: -599.27}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4943733134050598}
   - {fileID: 4577059246412188}
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691694531578772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce3ddac8013d584789a05b8d74180e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bbf6de7c26459d49b2b60f4bdca81d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 90, z: 0}
@@ -490,9 +490,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691694531578772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb2c6d86302d4aa429bd442abc6e36f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 83fbb2b08f583ea459141a9ea72d15c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 114903243857285948, guid: 1d96808f6f3a885458b2791869dc07d5,
+    type: 2}
   purpleNote: {fileID: 0}
   blueNote: {fileID: 0}
   whiteNote: {fileID: 0}
@@ -500,6 +502,7 @@ MonoBehaviour:
   yellowNote: {fileID: 0}
   orangeNote: {fileID: 0}
   greenNote: {fileID: 0}
+  cyanNote: {fileID: 0}
 --- !u!135 &135298721127423336
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -511,7 +514,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 90, z: 0}
 --- !u!135 &135529418388665918
 SphereCollider:
   m_ObjectHideFlags: 1
