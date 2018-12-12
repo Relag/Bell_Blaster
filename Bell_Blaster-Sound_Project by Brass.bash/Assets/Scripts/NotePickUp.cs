@@ -32,7 +32,7 @@ public class NotePickUp : MonoBehaviour
     {
         SoundManager.Instance.PlayHarmonic(8, myAudio);
 
-        gameObject.GetComponent<CapsuleCollider>().isTrigger = false;
+        gameObject.GetComponent<SphereCollider>().isTrigger = false;
 
             GameManager.Instance.score += 1;
             SetScoreText();
