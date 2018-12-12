@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class NotePickUp : MonoBehaviour
 {
-    private Text scoreText;             // score text for the UI
+    public Text scoreText;             // score text for the UI
     private Text completedLevelText;
     private AudioSource myAudio;
 
@@ -17,6 +17,7 @@ public class NotePickUp : MonoBehaviour
     public AudioClip yellowNote;
     public AudioClip orangeNote;
     public AudioClip greenNote;
+    public AudioClip cyanNote;
     void Start ()
     {
         myAudio = GetComponent<AudioSource>();
@@ -31,11 +32,12 @@ public class NotePickUp : MonoBehaviour
     {
         SoundManager.Instance.PlayHarmonic(8, myAudio);
 
-        GameManager.Instance.score += 1;
-        SetScoreText();
-        
-        StartCoroutine ("DestroyPickup");
-        Debug.Log("HitPurpleNote");
+        gameObject.GetComponent<CapsuleCollider>().isTrigger = false;
+
+            GameManager.Instance.score += 1;
+            SetScoreText();
+            StartCoroutine ("DestroyPickup");
+            Debug.Log("HitPurpleNote");
        
         if (other.gameObject.CompareTag("Blue"))
         {
@@ -59,8 +61,9 @@ public class NotePickUp : MonoBehaviour
 
     void SetScoreText()
     {
-        // once all 7 pickups are picked up with or without the bonus purple notes,
-        // a text will appear on the UI
+        // Updates the score with current.
+        scoreText.text = "Score: " + GameManager.Instance.score;
+
         if (GameManager.Instance.score >= 7  || GameManager.Instance.score <= 10) 
         {
             // uncomment this once the UI is made
