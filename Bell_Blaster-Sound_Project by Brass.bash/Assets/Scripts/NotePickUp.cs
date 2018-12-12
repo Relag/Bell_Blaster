@@ -7,6 +7,7 @@ public class NotePickUp : MonoBehaviour
 {
     private Text scoreText;             // score text for the UI
     private Text completedLevelText;
+    private int score;
     private AudioSource myAudio;
 
 
@@ -22,7 +23,7 @@ public class NotePickUp : MonoBehaviour
         myAudio = GetComponent<AudioSource>();
 
         score = 0;                          // pick up score starts at 0
-        SetScoreText ();
+        //SetScoreText ();
 
         //completedLevelText.text = "";     // uncomment this once the UI is made 
 	}
@@ -31,8 +32,8 @@ public class NotePickUp : MonoBehaviour
     {
         SoundManager.Instance.PlayHarmonic(8, myAudio);
 
-            GameManager.Instance.score += 1;
-            SetScoreText();
+            score += 1;
+            //SetScoreText();
             StartCoroutine ("DestroyPickup");
             Debug.Log("HitPurpleNote");
        
@@ -40,8 +41,8 @@ public class NotePickUp : MonoBehaviour
         {
             myAudio.clip = blueNote;
 
-            GameManager.Instance.score += 1;
-            SetScoreText();
+            score += 1;
+            //SetScoreText();
             other.gameObject.SetActive(false);
             Destroy(gameObject);
             gameObject.SetActive(false);
@@ -56,15 +57,15 @@ public class NotePickUp : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void SetScoreText()
+   /* void SetScoreText()
     {
         // once all 7 pickups are picked up with or without the bonus purple notes,
         // a text will appear on the UI
-        if (GameManager.Instance.score >= 7  || GameManager.Instance.score <= 10) 
+      /*  if (score >= 7  || score <= 10) 
         {
             // uncomment this once the UI is made
             //completedLevelText.text = "Congrats, you have completed the level!" w+
             //"Please proceed through the doorway";
         }
-    }
+    }*/
 }

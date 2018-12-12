@@ -25,7 +25,7 @@ public class Trumpet : MonoBehaviour
             RaycastHit hit;
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             //Create Raycast
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            if (Physics.Raycast(ray, out hit, 1000.0f))
             {
                 switch (hit.transform.gameObject.tag)
                 {
