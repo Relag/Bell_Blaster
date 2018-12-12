@@ -6,11 +6,16 @@ using UnityEngine.Audio;
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class hubMusicTrigger : MonoBehaviour {
 
+    [Space]
     public AudioMixerSnapshot outOfTriggerZone;
     public AudioMixerSnapshot insideTriggerZone;
     public float fBpm = 120;                     //beats per minute for music
+
+    [SerializeField]
+    private AudioSource anyAudioSource;              
 
     private float fTransitionIn;                
     private float fTransitionOut;
@@ -24,26 +29,29 @@ public class hubMusicTrigger : MonoBehaviour {
         fTransitionOut = fQuarterNote * 32;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collider)
     {
-        if (other.CompareTag("triggerZone"))
+        if (collider.CompareTag("triggerZone"))
         {
+            Debug.Log("triggerZone triggered");
             insideTriggerZone.TransitionTo(fTransitionIn);
         }
         PlayLevelMusic();                       
     }
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider collider)
     {
-        if (other.CompareTag("triggerZone"))
+        if (collider.CompareTag("triggerZone"))
         {
+
+            Debug.Log("triggerZone triggered");
+
             outOfTriggerZone.TransitionTo(fTransitionOut);
         }
     }
 
     void PlayLevelMusic()
     {
-        
-
+        SoundManager.Instance.PlayMusic(0,anyAudioSource);
     }
 
 }
