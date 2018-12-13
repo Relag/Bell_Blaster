@@ -9,7 +9,7 @@ public class MoveTest : MonoBehaviour {
 	void Start () {
         normal = transform.position;
 
-        
+        GetComponent<AudioSource>().Play();
 	}
 	
 	// Update is called once per frame
@@ -19,12 +19,12 @@ public class MoveTest : MonoBehaviour {
         {
             transform.position = new Vector3(normal.x + 5, normal.y, normal.z);
             GetComponent<AudioSource>().maxDistance = 100;
-            SoundManager.Instance.PlayHarmonic(1, GetComponent<AudioSource>());
         }
         else
         {
             transform.position = normal;
-            
+            GetComponent<AudioSource>().maxDistance = 25;
         }
+
 	}
 }

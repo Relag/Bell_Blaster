@@ -9,6 +9,7 @@ public class DoorMoveD2 : MonoBehaviour {
     void Start()
     {
         normal = transform.position;
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -17,10 +18,12 @@ public class DoorMoveD2 : MonoBehaviour {
         if (GameManager.Instance.currentNote == GameManager.BellNotes.D2)
         {
             transform.position = new Vector3(normal.x, normal.y - 5.2f, normal.z);
+            GetComponent<AudioSource>().maxDistance = 50;
         }
         else
         {
             transform.position = normal;
+            GetComponent<AudioSource>().maxDistance = 5;
         }
     }
 }

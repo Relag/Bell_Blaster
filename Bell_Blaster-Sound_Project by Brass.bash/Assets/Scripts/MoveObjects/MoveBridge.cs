@@ -10,6 +10,7 @@ public class MoveBridge : MonoBehaviour
     void Start()
     {
         normal = transform.position;
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -19,11 +20,13 @@ public class MoveBridge : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 90, 0);
             transform.position = new Vector3(normal.x + 15, normal.y, normal.z + 22);
+           
         }
         else
         {
             transform.position = normal;
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            
         }
     }
 }
