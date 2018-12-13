@@ -5,34 +5,84 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour {
 
-    private int levelIndex;         //stores the level index
+    Scene scene;
+    private int nodesAvailable;
+
+    public static SceneLoadManager Instance;        //singleton pattern
+
+    // Use this for initialization
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
 
     public void FixedUpdate()
     {
         // fetch the active scene index and store it in levelIndex
-        levelIndex = SceneManager.GetActiveScene().buildIndex;
+        scene = SceneManager.GetActiveScene();
     }
 
+    void ScorePerScene()
+    {
+        if (scene.name == "Rejean")
+        {
+            nodesAvailable = 4;
+
+            // checks if in active scene all nodes are picked up then go to hub
+            if (GameManager.Instance.score >= nodesAvailable)
+            {
+                GameManager.Instance.score = 0;
+                SceneManager.LoadScene("Hub");
+            }
+        }
+        if (scene.name == "Charles")
+        {
+            nodesAvailable = 10;
+
+            // checks if in active scene all nodes are picked up then go to hub
+            if (GameManager.Instance.score >= nodesAvailable)
+            {
+                GameManager.Instance.score = 0;     
+                SceneManager.LoadScene("Hub");
+            }
+        }
+        if (scene.name == "Nick")
+        {
+            nodesAvailable = 8;
+
+            // checks if in active scene all nodes are picked up then go to hub
+            if (GameManager.Instance.score >= nodesAvailable)
+            {
+                GameManager.Instance.score = 0;
+                SceneManager.LoadScene("Hub");
+            }
+        }
+    }
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag("levelCube1"))
+        if (collider.name == "levelCube1")
         {
-            Debug.Log("triggerZone trigger enter");
-            SceneManager.LoadScene(1);
+            Debug.Log("Level trigger enter");
+            SceneManager.LoadScene("Rejean");
         }
-        else if (collider.CompareTag("levelCube2"))
+        else if (collider.name == "levelCube2")
         {
-            Debug.Log("triggerZone trigger enter");
-            SceneManager.LoadScene(2);
+            Debug.Log("Level trigger enter");
+            SceneManager.LoadScene("Charles");
         }
         else if (collider.CompareTag("levelCube3"))
         {
-            Debug.Log("triggerZone trigger enter");
-            SceneManager.LoadScene(3);
+            Debug.Log("Level trigger enter");
+            SceneManager.LoadScene("Nick");
         }
     }
-
-
-
 }

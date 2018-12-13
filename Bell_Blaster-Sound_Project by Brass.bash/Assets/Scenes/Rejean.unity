@@ -2607,6 +2607,7 @@ Transform:
   m_Children:
   - {fileID: 35502363}
   - {fileID: 208720420}
+  - {fileID: 1934604320}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3853,6 +3854,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1934604319
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1506756480}
+    m_Modifications:
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec27cf8bf11cba846bc48e105bface5b, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1934604320 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4228401592803276, guid: ec27cf8bf11cba846bc48e105bface5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1934604319}
 --- !u!1 &1969306083
 GameObject:
   m_ObjectHideFlags: 0
