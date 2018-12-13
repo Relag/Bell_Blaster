@@ -15,7 +15,9 @@ public class hubMusicTrigger : MonoBehaviour {
     public float fBpm = 120;                     //beats per minute for music
 
     [SerializeField]
-    private AudioSource anyAudioSource;              
+    private AudioSource anyAudioSource;
+
+    int musicCounter = 0;                       // Keeps track of the triggerZone number and the music to pull
 
     private float fTransitionIn;                
     private float fTransitionOut;
@@ -31,27 +33,39 @@ public class hubMusicTrigger : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag("triggerZone"))
+        if (collider.CompareTag("triggerZone1"))
         {
-            Debug.Log("triggerZone triggered");
+            Debug.Log("triggerZone trigger enter");
             insideTriggerZone.TransitionTo(fTransitionIn);
+            musicCounter = 0;
         }
-        PlayLevelMusic();                       
+        else if (collider.CompareTag("triggerZone2"))
+        {
+            Debug.Log("triggerZone trigger enter");
+            insideTriggerZone.TransitionTo(fTransitionIn);
+            musicCounter = 1;
+        }
+        else if (collider.CompareTag("triggerZone3"))
+        {
+            Debug.Log("triggerZone trigger enter");
+            insideTriggerZone.TransitionTo(fTransitionIn);
+            musicCounter = 2;
+        }
+        PlayLevelMusic(musicCounter);                       
     }
     void OnTriggerExit(Collider collider)
     {
-        if (collider.CompareTag("triggerZone"))
+        if (collider.CompareTag("triggerZone1") || collider.CompareTag("triggerZone2") || collider.CompareTag("triggerZone3"))
         {
-
-            Debug.Log("triggerZone triggered");
-
+            Debug.Log("triggerZone trigger exit");
             outOfTriggerZone.TransitionTo(fTransitionOut);
         }
     }
 
-    void PlayLevelMusic()
+    void PlayLevelMusic( int x )
     {
-        SoundManager.Instance.PlayMusic(0,anyAudioSource);
+        // Works with the soundManager, pulls up 
+        SoundManager.Instance.PlayMusic(x,anyAudioSource);
     }
 
 }

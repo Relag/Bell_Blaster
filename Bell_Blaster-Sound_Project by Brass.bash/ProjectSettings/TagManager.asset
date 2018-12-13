@@ -11,7 +11,6 @@ TagManager:
   - Yellow
   - Orange
   - Purple
-  - triggerZone
   - E3
   - C1
   - G5
@@ -21,6 +20,12 @@ TagManager:
   - F4
   - D2
   - Cyan
+  - LevelCube1
+  - LevelCube2
+  - LevelCube3
+  - triggerZone1
+  - triggerZone2
+  - triggerZone3
   layers:
   - Default
   - TransparentFX
