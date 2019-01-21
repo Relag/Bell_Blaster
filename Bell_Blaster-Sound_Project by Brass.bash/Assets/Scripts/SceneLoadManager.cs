@@ -7,6 +7,8 @@ public class SceneLoadManager : MonoBehaviour {
 
     Scene scene;
     private int nodesAvailable;
+    public Collider player;
+    
 
     public static SceneLoadManager Instance;        //singleton pattern
 

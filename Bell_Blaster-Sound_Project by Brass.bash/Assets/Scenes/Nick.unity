@@ -551,7 +551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3dac60b8875c0e4f850fbe4fc30ca2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenePath: Assets/Scenes/Hub.unity
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +834,11 @@ Prefab:
       value: 
       objectReference: {fileID: 243488917159746514, guid: ce7eae1c3c1f5a64aad862904d571e23,
         type: 2}
+    - target: {fileID: 114182209575948494, guid: daff2a884e06f9e4b8eb77ceb3fa003d,
+        type: 2}
+      propertyPath: songNumber
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daff2a884e06f9e4b8eb77ceb3fa003d, type: 2}
   m_IsPrefabAsset: 0

@@ -20,7 +20,11 @@ public class MoveBridge : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 90, 0);
             transform.position = new Vector3(normal.x + 15, normal.y, normal.z + 22);
-           
+        }
+        else if (GameManager.Instance.currentNote == GameManager.BellNotes.G5)
+        {
+            transform.position = new Vector3(normal.x + 42, normal.y, normal.z);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else
         {
